@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container__header {
+    background-color: cornflowerblue;
+    width: 100%;
+
+
+}
+
+.container__header--logo {
+    padding: 5px;
+    width: 90px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+.container__nav {
+    background-color: yellowgreen;
+    width: 100%;
+    height: 90px;
+}
+
+.container__main{
+    width: 100%;
+    background: blueviolet;
+}
+
+.container__main--img{
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    
+}
+
+.container__footer{
+    background-color: cornflowerblue;
+    height: 5vh;
+}
