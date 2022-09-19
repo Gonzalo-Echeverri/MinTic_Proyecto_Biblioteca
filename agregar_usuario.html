@@ -14,7 +14,7 @@
 
     <!-- Hojas de Estilos -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/agregar_usuario.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
 <body>
     <!-- Contenedor Principal -->
     <div class="container">
-        
+
         <!--Contenedor Encabezado -->
         <div class="grid__header">
             <!--Contenedor Logo Encabezado -->
@@ -47,7 +47,7 @@
         </div> <!-- Fin Contenedor Encabezado -->
 
 
-        <!--Contenedor Menu -->
+       <!--Contenedor Menu -->
        <nav class="container__menu">
 
         <ul>
@@ -80,12 +80,39 @@
 
         <!-- ----- Container Main ------ -->
         <div class="container__main">
-            
-            <h2>Bienvenido(a) al Gestor del Sistema de Biblioteca </h2>
 
-            <img src="img/escudo.png" class="container__main--img" alt="escudo">
+            <h2>Registrar Usuario</h2>
 
-        </div> <!-- ----- Fin Container Main ------ -->
+            <form action="">
+                <label for="">Id Usuario: </label>
+                <input type="number" required>
+
+                <label for="">Nombres: </label>
+                <input type="text" required>
+
+                <label for="">Apellidos: </label>
+                <input type="text" required>
+
+                <label for="">Tipo de Usuario: </label>
+                <select name="tipo-usuario" id="tipo-usuario">
+                    <option value="admin">Alumno</option>
+                    <option value="admin">Profesor</option>
+                    <option value="admin">Administrador</option>
+                </select>
+
+                <label for="">Contraseña: </label>
+                <input type="password" required>
+
+                <label for="">Confirmación de Contraseña: </label>
+                <input type="password" required>
+
+                <input class="btn-submit" type="submit" value="Agregar">
+
+
+            </form>
+
+        </div> 
+        <!-- ----- Fin Container Main ------ -->
 
 
         <!-- ----- Container Footer ------ -->

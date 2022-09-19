@@ -8,24 +8,27 @@
 
     <title>Biblioteca Colegio Gimnasio del Pacífico</title>
 
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
+      <!-- Hojas de Estilos -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/login.css">
 
-    <link href="../MinTic_Proyecto_Biblioteca/styles/login.css" rel="stylesheet" type="text/css">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-
-    <div class="encabezado">
+    <div class="titulo1">
         <h1>Biblioteca</h1>
         <h1>Institución Educativa Gimnasio del Pacifico</h1>
     </div>
-
-
-
-
-
 
     <div class="contenedor_one">
 
@@ -34,43 +37,25 @@
             <img src="img/escudo.png" alt="escudo del colegio" width="170" height="200">
         </div>
 
-        <div class="conten_user">
+        <div class="contenedor_registro">
             <form action="">
-                <label for="">Usuario:</label>
-                <br>
-                <input type="text" name="username" id="username" placeholder="Escriba aquí su usuario">
-            </form>
-        </div>
+                <label for="">Id Usuario:</label>
+                <input type="number" name="username" id="username" placeholder="Escriba aquí su Id de Usuario" required>
 
-        <div class="conten_pass">
-            <form action="">
                 <label for="">Contraseña:</label>
-                <br>
-                <input type="password" name="password" id="password" placeholder="Escriba aquí su contraseña">
+                <input type="password" name="password" id="password" placeholder="Escriba aquí su contraseña" required>
+
+                <input src="index.html" type="submit" value="Ingresar">
 
             </form>
+
         </div>
-
-        <div class="conten_btn">
-            <form action="index.html">
-                <button>Ingresar</button>
-            </form>
-            
-        </div>
-
-
 
     </div>
-
-
-
 
     <div class="contenedor_two">
-        <p>Copyright © 2022 Juan Gonzalo Echeverri - Todos los derechos reservados</p>
+        <p>Copyright &copy; 2022 Juan Gonzalo Echeverri - Todos los derechos reservados</p>
     </div>
-
-
-
 
 </body>
 

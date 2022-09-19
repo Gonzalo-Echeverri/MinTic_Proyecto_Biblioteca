@@ -1,7 +1,7 @@
-
-*{
+* {
   font-family: 'Roboto', sans-serif;
 }
+
 /*------------ Contenedor Principal -----------*/
 
 .container {
@@ -48,7 +48,8 @@ li {
   display: inline-block;
 }
 
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -94,22 +95,96 @@ li.dropdown {
 /*------------ Container Main ------------*/
 
 .container__main {
-  width: 100%;
-  background: #fff;
-}
-
-.container__main h2 {
-  margin: 0;
+  margin: auto;
+  margin-top: 30px;
+  width: 700px;
+  padding-bottom: 40px;
+  border-radius: 45px;
+  background: rgb(69, 179, 157);
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.75);
   text-align: center;
-  padding: 40px;
 }
 
-.container__main--img {
-  width: 300px;
-  height: 350px;
+/* formulario */
+
+.form-one {
+  display: inline-block;
+  margin: auto;
+  margin-top: 12px;
+  padding-bottom: 12px;
+}
+
+.form-two {
+  display: inline-block;
+  margin: auto;
+  margin-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn-form {
   display: block;
   margin: auto;
 }
+
+h2 {
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+
+/* .container__main form label{
+display:inline-block;
+margin: auto;
+text-align: left;
+padding-left: 54px;
+
+} */
+
+label {
+  display: block;
+  padding-top: 15px;
+  text-align: left;
+}
+
+.container__main form select {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: black 10px;
+  height: 35px;
+  width: 200px;
+  padding-left: 10px;
+
+}
+
+.container__main form input {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  height: 35px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.btn-submit {
+  background-color: #0E6251;
+  color: white;
+  width: 80px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #187c68;
+}
+
+
+
 
 
 /*------------ Container Footer ------------*/

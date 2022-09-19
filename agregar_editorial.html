@@ -14,7 +14,7 @@
 
     <!-- Hojas de Estilos -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/agregar_editorial.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +47,7 @@
         </div> <!-- Fin Contenedor Encabezado -->
 
 
-        <!--Contenedor Menu -->
+       <!--Contenedor Menu -->
        <nav class="container__menu">
 
         <ul>
@@ -78,14 +78,25 @@
     </nav>
     <!--Fin Contenedor Menu -->
 
-        <!-- ----- Container Main ------ -->
-        <div class="container__main">
-            
-            <h2>Bienvenido(a) al Gestor del Sistema de Biblioteca </h2>
 
-            <img src="img/escudo.png" class="container__main--img" alt="escudo">
+       <!-- ----- Container Main ------ -->
+       <div class="container__main">
 
-        </div> <!-- ----- Fin Container Main ------ -->
+        <h2>Registrar Editorial</h2>
+
+        <form action="">
+            <label for="">Id Editorial: </label>
+            <input type="number" required>
+
+            <label for="">Nombre de la Editorial: </label>
+            <input type="text" required>
+
+            <input class="btn-submit" type="submit" value="Agregar">
+
+        </form>
+
+    </div> 
+    <!-- ----- Fin Container Main ------ -->
 
 
         <!-- ----- Container Footer ------ -->

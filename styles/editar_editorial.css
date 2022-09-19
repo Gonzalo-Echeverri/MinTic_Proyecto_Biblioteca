@@ -94,8 +94,13 @@ li.dropdown {
 /*------------ Container Main ------------*/
 
 .container__main {
-  width: 100%;
-  background: #fff;
+  margin: auto;
+  margin-top: 30px;
+  width: 400px;
+  padding-bottom: 40px;
+  border-radius: 45px;
+  background: rgb( 69, 179, 157);
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container__main h2 {
@@ -104,12 +109,62 @@ li.dropdown {
   padding: 40px;
 }
 
-.container__main--img {
+.container__main form {
   width: 300px;
-  height: 350px;
   display: block;
   margin: auto;
 }
+
+.container__main form label{
+display: block;
+margin: auto;
+padding-left: 54px;
+
+}
+
+.container__main form input{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  height: 35px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+
+.btn-submit-load{
+  background-color: #71c0b0;
+  color: black;
+  width: 80px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+ .btn-submit{
+  background-color: #0E6251;
+  color: white;
+  width: 80px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+} 
+
+input[type=submit]:hover {
+  background-color: #187c68;
+  color: white;
+}
+
+hr{
+  height: 5px;
+  background-color: #85dcca;
+  border-radius: 90% 90% 90% 90%;
+}
+
+
+
 
 
 /*------------ Container Footer ------------*/

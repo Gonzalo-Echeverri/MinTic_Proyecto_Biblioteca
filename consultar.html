@@ -14,7 +14,7 @@
 
     <!-- Hojas de Estilos -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/consultar.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
 <body>
     <!-- Contenedor Principal -->
     <div class="container">
-        
+
         <!--Contenedor Encabezado -->
         <div class="grid__header">
             <!--Contenedor Logo Encabezado -->
@@ -80,10 +80,32 @@
 
         <!-- ----- Container Main ------ -->
         <div class="container__main">
-            
-            <h2>Bienvenido(a) al Gestor del Sistema de Biblioteca </h2>
 
-            <img src="img/escudo.png" class="container__main--img" alt="escudo">
+            <h2>Consultar Libro</h2>
+
+            <div class="consulta">
+            <form action="#">
+                <p>Búsqueda por: </p>
+                <select name="options" id="options">
+                    <option value="">Palabra Clave</option>
+                    <option value="">Título</option>
+                    <option value="">Autor</option>
+                </select>
+
+                <input type="search" id="gsearch" name="gsearch" placeholder="Escriba aquí su consulta" required>
+
+                <input class="btn-submit" type="submit" value="Consultar">
+            </form>
+        </div>
+
+            <hr>
+
+            <p class="txt-resultados">Resultados: </p>
+
+            <div class="resultados">
+
+
+            </div>
 
         </div> <!-- ----- Fin Container Main ------ -->
 

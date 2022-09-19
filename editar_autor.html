@@ -14,7 +14,7 @@
 
     <!-- Hojas de Estilos -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/editar_autor.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
 <body>
     <!-- Contenedor Principal -->
     <div class="container">
-        
+
         <!--Contenedor Encabezado -->
         <div class="grid__header">
             <!--Contenedor Logo Encabezado -->
@@ -48,42 +48,65 @@
 
 
         <!--Contenedor Menu -->
-       <nav class="container__menu">
+        <nav class="container__menu">
 
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Agregar</a>
-                <div class="dropdown-content">
-                    <a href="agregar_autor.html">Autor</a>
-                    <a href="agregar_editorial.html">Editorial</a>
-                    <a href="agregar_libro.html">Libro</a>
-                    <a href="agregar_usuario.html">Usuario</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Editar</a>
-                <div class="dropdown-content">
-                    <a href="editar_autor.html">Autor</a>
-                    <a href="editar_editorial.html">Editorial</a>
-                    <a href="editar_libro.html">Libro</a>
-                    <a href="editar_usuario.html">Usuario</a>
-                </div>
-            </li>
-            <li><a href="prestar.html">Prestar</a></li>
-            <li><a href="devolver.html">Devolver</a></li>
-            <li><a href="consultar.html">Consultar Libro</a></li>
-        </ul>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Agregar</a>
+                    <div class="dropdown-content">
+                        <a href="agregar_autor.html">Autor</a>
+                        <a href="agregar_editorial.html">Editorial</a>
+                        <a href="agregar_libro.html">Libro</a>
+                        <a href="agregar_usuario.html">Usuario</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Editar</a>
+                    <div class="dropdown-content">
+                        <a href="editar_autor.html">Autor</a>
+                        <a href="editar_editorial.html">Editorial</a>
+                        <a href="editar_libro.html">Libro</a>
+                        <a href="editar_usuario.html">Usuario</a>
+                    </div>
+                </li>
+                <li><a href="prestar.html">Prestar</a></li>
+                <li><a href="devolver.html">Devolver</a></li>
+                <li><a href="consultar.html">Consultar Libro</a></li>
+            </ul>
 
-    </nav>
-    <!--Fin Contenedor Menu -->
+        </nav>
+        <!--Fin Contenedor Menu -->
 
         <!-- ----- Container Main ------ -->
         <div class="container__main">
-            
-            <h2>Bienvenido(a) al Gestor del Sistema de Biblioteca </h2>
 
-            <img src="img/escudo.png" class="container__main--img" alt="escudo">
+            <h2>Editar Autor</h2>
+
+            <form action="">
+                <label for="">Id Autor: </label>
+                <input type="number" required>
+
+                <input class="btn-submit-load" type="submit" value="Cargar Autor">
+
+            </form>
+
+            <hr>
+
+            <form action="">
+
+                <label for="">Id Autor: </label>
+                <input type="number" disabled>
+
+                <label for="">Nombres: </label>
+                <input type="text" required>
+
+                <label for="">Apellidos: </label>
+                <input type="text" required>
+
+                <input class="btn-submit" type="submit" value="Actualizar">
+
+            </form>
 
         </div> <!-- ----- Fin Container Main ------ -->
 
