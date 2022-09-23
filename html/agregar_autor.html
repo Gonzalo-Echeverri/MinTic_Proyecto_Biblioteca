@@ -9,12 +9,12 @@
     <title>Biblioteca Colegio Gimnasio del Pacifico</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- Hojas de Estilos -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/agregar_libro.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/agregar_autor.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,13 +33,13 @@
         <div class="grid__header">
             <!--Contenedor Logo Encabezado -->
             <div class="grid__item">
-                <img src="img/banner2.png" alt="" width="500px">
+                <img src="../img/banner2.png" alt="" width="500px">
             </div>
             <!--Fin Contenedor Logo Encabezado -->
 
             <!--Contenedor Boton Encabezado -->
             <div class="grid__item2">
-                <form action="login.html">
+                <form action="../login.html">
                     <button>Cerrar Sesión</button>
                 </form>
             </div>
@@ -51,7 +51,7 @@
         <nav class="container__menu">
 
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Agregar</a>
                     <div class="dropdown-content">
@@ -78,68 +78,34 @@
         </nav>
         <!--Fin Contenedor Menu -->
 
-        <h2>Registrar Libro</h2>
+
+        </nav>
+        <!--Fin Contenedor Menu -->
 
         <!-- ----- Container Main ------ -->
         <div class="container__main">
 
+            <h2>Registrar Autor</h2>
+
             <form action="">
-
-                <div class="form-one">
-
-                    <label for="">Id Libro: </label>
-                    <input type="number" required>
-
-                    <label for="">ISBN: </label>
-                    <input type="number" required>
-
-                    <label for="">Número de Páginas: </label>
-                    <input type="number" required>
-
-                    <label for="">Año de Edición: </label>
-                    <input type="text" required>
-
-                    <label for="">Estado: </label>
-                    <select id="estado" name="estado">
-                        <option value="disponible">Disponible</option>
-                        <option value="prestamo">En Prestamo</option>
-                    </select>
-
-                    <label for="">Id Autor: </label>
-                    <input type="number" required>
-
-                </div>
-
-                <div class="form-two">
-                    <label for="">Título: </label>
-                    <input type="text" required>
-
-                    <label for="">Idioma: </label>
-                    <input type="text" required>
-
-                    <label for="">Número de la Edición: </label>
-                    <input type="number" required>
-
-                    <label for="">Estante (Ubicación): </label>
-                    <input type="text" required>
-
-                    <label for="">Fecha de Devolución: </label>
-                    <input type="date" disabled>
-
-                    <label for="">Id Editorial: </label>
-                    <input type="number" required>
-
-                </div>
+                <label for="">Id Autor: </label>
+                <input type="number" required disabled>
+                <!-- El id_autor es autoincremental en la bd  -->
 
 
-                <div class="btn-form">
-                    <input class="btn-submit" type="submit" value="Agregar">
+                <label for="">Nombres: </label>
+                <input type="text" id="nombre" required>
 
-                </div>
+                <label for="">Apellidos: </label>
+                <input type="text" id="apellido" required>
+
+                <input class="btn-submit" type="submit" value="Agregar">
+
 
             </form>
 
-        </div> <!-- ----- Fin Container Main ------ -->
+        </div>
+        <!-- ----- Fin Container Main ------ -->
 
 
         <!-- ----- Container Footer ------ -->

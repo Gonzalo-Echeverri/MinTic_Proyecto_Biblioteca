@@ -9,12 +9,12 @@
     <title>Biblioteca Colegio Gimnasio del Pacifico</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- Hojas de Estilos -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/agregar_autor.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/devolver.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,18 +28,18 @@
 <body>
     <!-- Contenedor Principal -->
     <div class="container">
-
+        
         <!--Contenedor Encabezado -->
         <div class="grid__header">
             <!--Contenedor Logo Encabezado -->
             <div class="grid__item">
-                <img src="img/banner2.png" alt="" width="500px">
+                <img src="../img/banner2.png" alt="" width="500px">
             </div>
             <!--Fin Contenedor Logo Encabezado -->
 
             <!--Contenedor Boton Encabezado -->
             <div class="grid__item2">
-                <form action="login.html">
+                <form action="../login.html">
                     <button>Cerrar Sesión</button>
                 </form>
             </div>
@@ -47,63 +47,58 @@
         </div> <!-- Fin Contenedor Encabezado -->
 
 
-        <!--Contenedor Menu -->
-        <nav class="container__menu">
+       <!--Contenedor Menu -->
+       <nav class="container__menu">
 
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Agregar</a>
-                    <div class="dropdown-content">
-                        <a href="agregar_autor.html">Autor</a>
-                        <a href="agregar_editorial.html">Editorial</a>
-                        <a href="agregar_libro.html">Libro</a>
-                        <a href="agregar_usuario.html">Usuario</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Editar</a>
-                    <div class="dropdown-content">
-                        <a href="editar_autor.html">Autor</a>
-                        <a href="editar_editorial.html">Editorial</a>
-                        <a href="editar_libro.html">Libro</a>
-                        <a href="editar_usuario.html">Usuario</a>
-                    </div>
-                </li>
-                <li><a href="prestar.html">Prestar</a></li>
-                <li><a href="devolver.html">Devolver</a></li>
-                <li><a href="consultar.html">Consultar Libro</a></li>
-            </ul>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Agregar</a>
+                <div class="dropdown-content">
+                    <a href="agregar_autor.html">Autor</a>
+                    <a href="agregar_editorial.html">Editorial</a>
+                    <a href="agregar_libro.html">Libro</a>
+                    <a href="agregar_usuario.html">Usuario</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Editar</a>
+                <div class="dropdown-content">
+                    <a href="editar_autor.html">Autor</a>
+                    <a href="editar_editorial.html">Editorial</a>
+                    <a href="editar_libro.html">Libro</a>
+                    <a href="editar_usuario.html">Usuario</a>
+                </div>
+            </li>
+            <li><a href="prestar.html">Prestar</a></li>
+            <li><a href="devolver.html">Devolver</a></li>
+            <li><a href="consultar.html">Consultar Libro</a></li>
+        </ul>
 
-        </nav>
-        <!--Fin Contenedor Menu -->
-
-
-        </nav>
-        <!--Fin Contenedor Menu -->
+    </nav>
+    <!--Fin Contenedor Menu -->
 
         <!-- ----- Container Main ------ -->
         <div class="container__main">
 
-            <h2>Registrar Autor</h2>
-
+            <h2>Devolución de Libro</h2>
+    
             <form action="">
-                <label for="">Id Autor: </label>
-                <input type="number" required>
+                <label for="">Id Libro: </label>
+                <input type="number" id="id_libro" required>
 
-                <label for="">Nombres: </label>
-                <input type="text" required>
+                <input class="btn-submit" type="submit" value="Devolver">
 
-                <label for="">Apellidos: </label>
-                <input type="text" required>
+<!-- El sistema debera tomar la fecha del sistema y guaradarla en la fecha de devolucion de la bd -->
+<!-- nombre del campo en la bd fecha_devolucion -->
 
-                <input class="btn-submit" type="submit" value="Agregar">
+<!-- El sistema debera generar un id_devolucion, este campo es autoincremental en la bd -->
 
-
+<!-- El sistema tomara el id_usuario y el id_prestamo asociado al id_prestamo del prestamo -->
+    
             </form>
-
-        </div>
-        <!-- ----- Fin Container Main ------ -->
+    
+        </div>  <!-- ----- Fin Container Main ------ -->
 
 
         <!-- ----- Container Footer ------ -->

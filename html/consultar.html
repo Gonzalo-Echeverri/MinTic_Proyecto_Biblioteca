@@ -9,12 +9,12 @@
     <title>Biblioteca Colegio Gimnasio del Pacifico</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- Hojas de Estilos -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/devolver.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/consultar.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,18 +28,18 @@
 <body>
     <!-- Contenedor Principal -->
     <div class="container">
-        
+
         <!--Contenedor Encabezado -->
         <div class="grid__header">
             <!--Contenedor Logo Encabezado -->
             <div class="grid__item">
-                <img src="img/banner2.png" alt="" width="500px">
+                <img src="../img/banner2.png" alt="" width="500px">
             </div>
             <!--Fin Contenedor Logo Encabezado -->
 
             <!--Contenedor Boton Encabezado -->
             <div class="grid__item2">
-                <form action="login.html">
+                <form action="../login.html">
                     <button>Cerrar Sesión</button>
                 </form>
             </div>
@@ -47,11 +47,11 @@
         </div> <!-- Fin Contenedor Encabezado -->
 
 
-       <!--Contenedor Menu -->
+        <!--Contenedor Menu -->
        <nav class="container__menu">
 
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Agregar</a>
                 <div class="dropdown-content">
@@ -81,17 +81,33 @@
         <!-- ----- Container Main ------ -->
         <div class="container__main">
 
-            <h2>Devolución de Libro</h2>
-    
-            <form action="">
-                <label for="">Id Libro: </label>
-                <input type="number" required>
+            <h2>Consultar Libro</h2>
 
-                <input class="btn-submit" type="submit" value="Devolver">
-    
+            <div class="consulta">
+            <form action="#">
+                <p>Búsqueda por: </p>
+                <select name="options" id="opcion_consulta">
+                    <option value="">Palabra Clave</option>
+                    <option value="">Título</option>
+                    <option value="">Autor</option>
+                </select>
+
+                <input type="search" id="consulta" placeholder="Escriba aquí su consulta" required>
+
+                <input class="btn-submit" type="submit" value="Consultar">
             </form>
-    
-        </div>  <!-- ----- Fin Container Main ------ -->
+        </div>
+
+            <hr>
+
+            <p class="txt-resultados">Resultados: </p>
+
+            <div class="resultados">
+
+
+            </div>
+
+        </div> <!-- ----- Fin Container Main ------ -->
 
 
         <!-- ----- Container Footer ------ -->

@@ -9,12 +9,12 @@
     <title>Biblioteca Colegio Gimnasio del Pacifico</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- Hojas de Estilos -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/editar_autor.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/prestar.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,13 +33,13 @@
         <div class="grid__header">
             <!--Contenedor Logo Encabezado -->
             <div class="grid__item">
-                <img src="img/banner2.png" alt="" width="500px">
+                <img src="../img/banner2.png" alt="" width="500px">
             </div>
             <!--Fin Contenedor Logo Encabezado -->
 
             <!--Contenedor Boton Encabezado -->
             <div class="grid__item2">
-                <form action="login.html">
+                <form action="../login.html">
                     <button>Cerrar Sesión</button>
                 </form>
             </div>
@@ -51,7 +51,7 @@
         <nav class="container__menu">
 
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Agregar</a>
                     <div class="dropdown-content">
@@ -81,30 +81,26 @@
         <!-- ----- Container Main ------ -->
         <div class="container__main">
 
-            <h2>Editar Autor</h2>
-
-            <form action="">
-                <label for="">Id Autor: </label>
-                <input type="number" required>
-
-                <input class="btn-submit-load" type="submit" value="Cargar Autor">
-
-            </form>
-
-            <hr>
+            <h2>Prestamo de Libro</h2>
 
             <form action="">
 
-                <label for="">Id Autor: </label>
-                <input type="number" disabled>
+<!-- El id_prestamo se agraga de forma autoincremental, funcionara como el id de una factura -->
+<!-- El nombre del campo en la bd es id_prestamo -->
 
-                <label for="">Nombres: </label>
-                <input type="text" required>
+<!-- La fecha de prestamo del libro la debera tomar el sistema sin necesidad de nosotros ingresarla de forma manual -->
+<!-- El nombre del campo en la bd es fecha_prestamo -->
 
-                <label for="">Apellidos: </label>
-                <input type="text" required>
+                <label for="">Id Libro: </label>
+                <input type="number" id="id_libro" required>
 
-                <input class="btn-submit" type="submit" value="Actualizar">
+                <label for="">Id Usuario: </label>
+                <input type="number" id="id_usuario" required>
+
+                <label for="">Fecha de Devolución: </label>
+                <input type="date" id="fecha_devolucion" required>
+
+                <input class="btn-submit" type="submit" value="Prestar">
 
             </form>
 

@@ -9,12 +9,12 @@
     <title>Biblioteca Colegio Gimnasio del Pacifico</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- Hojas de Estilos -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/editar_libro.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/agregar_libro.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
 
             <!--Contenedor Boton Encabezado -->
             <div class="grid__item2">
-                <form action="login.html">
+                <form action="../login.html">
                     <button>Cerrar Sesión</button>
                 </form>
             </div>
@@ -51,7 +51,7 @@
         <nav class="container__menu">
 
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Agregar</a>
                     <div class="dropdown-content">
@@ -77,85 +77,71 @@
 
         </nav>
         <!--Fin Contenedor Menu -->
-        
 
-        <!-- ----- Container Main ------ -->
-        <h2>Editar Libro</h2>
+        <h2>Registrar Libro</h2>
 
         <!-- ----- Container Main ------ -->
         <div class="container__main">
 
             <form action="">
 
-                <div class="form-load">
-
-                    <label for="">Id Libro: </label>
-                    <input type="number" required>
-
-                    <div class="btn-form">
-                        <input class="btn-submit" type="submit" value="Cargar Libro">
-                    </div>
-
-                </div>
-            </form>
-
-            <hr>
-
-            <form action="">
-
                 <div class="form-one">
 
                     <label for="">Id Libro: </label>
-                    <input type="number" disabled>
+                    <input type="number" id="id_libro" required disabled>
+                    <!-- El id_libro es autoincremental en la bd -->
 
                     <label for="">ISBN: </label>
-                    <input type="number" required>
+                    <input type="number" id="isbn" required>
 
                     <label for="">Número de Páginas: </label>
-                    <input type="number" required>
+                    <input type="number" id="num_paginas" required>
 
                     <label for="">Año de Edición: </label>
-                    <input type="text" required>
+                    <input type="number" id="anio_edicion" required>
 
                     <label for="">Estado: </label>
-                    <select id="estado" name="estado">
+                    <select id="estado">
                         <option value="disponible">Disponible</option>
                         <option value="prestamo">En Prestamo</option>
                     </select>
 
                     <label for="">Id Autor: </label>
-                    <input type="number" required>
+                    <input type="number" id="id_autor" required>
 
                 </div>
 
                 <div class="form-two">
                     <label for="">Título: </label>
-                    <input type="text" required>
+                    <input type="text" id="titulo" required>
 
                     <label for="">Idioma: </label>
-                    <input type="text" required>
+                    <input type="text" id="idioma" required>
 
                     <label for="">Número de la Edición: </label>
-                    <input type="number" required>
+                    <input type="number" id="num_edicion" required>
 
                     <label for="">Estante (Ubicación): </label>
-                    <input type="text" required>
+                    <input type="text" id="estante" required>
 
                     <label for="">Fecha de Devolución: </label>
-                    <input type="date">
+                    <input type="date" id="fecha_devolucion" disabled>
 
                     <label for="">Id Editorial: </label>
-                    <input type="number" required>
+                    <input type="number" id="id_editorial" required>
 
                 </div>
 
 
                 <div class="btn-form">
                     <input class="btn-submit" type="submit" value="Agregar">
+
                 </div>
+
             </form>
 
         </div> <!-- ----- Fin Container Main ------ -->
+
 
         <!-- ----- Container Footer ------ -->
         <footer class="footer">

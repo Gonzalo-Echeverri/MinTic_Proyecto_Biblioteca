@@ -9,12 +9,12 @@
     <title>Biblioteca Colegio Gimnasio del Pacifico</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- Hojas de Estilos -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/agregar_editorial.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/agregar_usuario.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,18 +28,18 @@
 <body>
     <!-- Contenedor Principal -->
     <div class="container">
-        
+
         <!--Contenedor Encabezado -->
         <div class="grid__header">
             <!--Contenedor Logo Encabezado -->
             <div class="grid__item">
-                <img src="img/banner2.png" alt="" width="500px">
+                <img src="../img/banner2.png" alt="" width="500px">
             </div>
             <!--Fin Contenedor Logo Encabezado -->
 
             <!--Contenedor Boton Encabezado -->
             <div class="grid__item2">
-                <form action="login.html">
+                <form action="../login.html">
                     <button>Cerrar Sesión</button>
                 </form>
             </div>
@@ -51,7 +51,7 @@
        <nav class="container__menu">
 
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Agregar</a>
                 <div class="dropdown-content">
@@ -78,25 +78,41 @@
     </nav>
     <!--Fin Contenedor Menu -->
 
+        <!-- ----- Container Main ------ -->
+        <div class="container__main">
 
-       <!-- ----- Container Main ------ -->
-       <div class="container__main">
+            <h2>Registrar Usuario</h2>
 
-        <h2>Registrar Editorial</h2>
+            <form action="">
+                <label for="">Id Usuario: </label>
+                <input type="number" id="id_usuario" required>
 
-        <form action="">
-            <label for="">Id Editorial: </label>
-            <input type="number" required>
+                <label for="">Nombres: </label>
+                <input type="text" id="nombre" required>
 
-            <label for="">Nombre de la Editorial: </label>
-            <input type="text" required>
+                <label for="">Apellidos: </label>
+                <input type="text" id="apellido" required>
 
-            <input class="btn-submit" type="submit" value="Agregar">
+                <label for="">Tipo de Usuario: </label>
+                <select name="tipo-usuario" id="tipo_usuario">
+                    <option value="admin">Alumno</option>
+                    <option value="admin">Profesor</option>
+                    <option value="admin">Administrador</option>
+                </select>
 
-        </form>
+                <label for="">Contraseña: </label>
+                <input type="password" id="password" required>
 
-    </div> 
-    <!-- ----- Fin Container Main ------ -->
+                <label for="">Confirmación de Contraseña: </label>
+                <input type="password" id="password" required>
+
+                <input class="btn-submit" type="submit" value="Agregar">
+
+
+            </form>
+
+        </div> 
+        <!-- ----- Fin Container Main ------ -->
 
 
         <!-- ----- Container Footer ------ -->
